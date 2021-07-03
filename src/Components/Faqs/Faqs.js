@@ -22,7 +22,7 @@ const Faqs = () => {
                 <Col xs={12} md={3}>
                 <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span> <br/> <br/>
                 <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span>
-                <span></span>
+                <span>hi</span>
                 </Col>
             </Row>
         </Container>
