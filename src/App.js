@@ -12,6 +12,7 @@ import TrekMap from './Components/TrekMap/TrekMap';
 import TrekPolicies from './Components/TrekPolicies/TrekPolicies';
 import './App.css';
 
+
 function App() {
   return (
    <>
