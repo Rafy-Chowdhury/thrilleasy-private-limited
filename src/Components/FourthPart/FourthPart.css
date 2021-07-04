@@ -1,0 +1,21 @@
+.level{
+    width: 99%;
+    margin-left: 13px;
+    margin-top: 20px;
+}
+
+@media all and (min-width:992px){
+    .level{
+        width: 80%;
+        margin-left: 13px;
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width:600px){
+    .level{
+        width: 99%;
+        margin-left: 13px;
+        margin-top: 20px;
+    }
+}

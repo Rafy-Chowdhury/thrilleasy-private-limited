@@ -1,0 +1,9 @@
+.all-Question {
+    display: inline-block;
+    width: 100%;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
