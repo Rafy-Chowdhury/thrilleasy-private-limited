@@ -1,0 +1,34 @@
+.fullDiv{
+    display: flex;
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+.leftDiv{
+    padding: 7px;
+    width: 50%;
+}
+.rightDiv{
+    background-color: #fcc52d;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connecting{
+    font-size: 20px;
+    color: #fff;
+}
+.connecting:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media all and (min-width:991px){
+    .fullDiv{
+        display: none;
+    }
+}

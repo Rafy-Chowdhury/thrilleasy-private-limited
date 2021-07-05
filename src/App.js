@@ -11,11 +11,13 @@ import Review from './Components/Review/Review';
 import TrekMap from './Components/TrekMap/TrekMap';
 import TrekPolicies from './Components/TrekPolicies/TrekPolicies';
 import './App.css';
+import StickyButton from './Components/Stickybutton/StickyButton';
 
 
 function App() {
   return (
    <>
+    <StickyButton/>
     <Headers />
     <TopBanner />
     <SecondPart />
