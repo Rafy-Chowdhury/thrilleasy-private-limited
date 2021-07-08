@@ -1,0 +1,23 @@
+.mainContainer{
+    display: flex;
+}
+.leftBox{
+    margin-right: auto;
+}
+.priceFirst{
+    display: flex;
+    justify-content: space-between;
+}
+.priceSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.convenience{
+    position: relative;
+    margin-right: 50px;
+}
+.total{
+    position: relative;
+    margin-left: 40px;
+}

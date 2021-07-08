@@ -1,35 +1,36 @@
+import React, { createContext, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './Components/Home/Home';
+import BookingDetails from './Components/BookingDetails/BookingDetails';
+import BookingSuccess from "./Components/BookingSuccess/BookingSuccess";
 
-import Footer from './Components/Footer/Footer';
-import Package from './Components/Package/Package';
-import Faqs from './Components/Faqs/Faqs';
-import Headers from './Components/Headers/Headers';
-import TopBanner from './Components/TopBanner/TopBanner';
-import SecondPart from './Components/SecondPart/SecondPart';
-import ThirdPart from './Components/ThirdPart/ThirdPart';
-import FourthPart from './Components/FourthPart/FourthPart';
-import Review from './Components/Review/Review';
-import TrekMap from './Components/TrekMap/TrekMap';
-import TrekPolicies from './Components/TrekPolicies/TrekPolicies';
-import './App.css';
-import StickyButton from './Components/Stickybutton/StickyButton';
-
+export const UserContext = createContext();
 
 function App() {
+  const [flowData, setFlowData] = useState({})
+  console.log(flowData);
   return (
-   <>
-    <StickyButton/>
-    <Headers />
-    <TopBanner />
-    <SecondPart />
-    <ThirdPart />
-    <FourthPart />
-    <Review />
-    <Package />
-    <TrekMap />
-    <TrekPolicies />
-    <Faqs />
-    <Footer />
-   </>
+    <UserContext.Provider value = {[flowData, setFlowData]}>
+    <Router>
+    <div>
+      <Switch>
+      <Route path="/booking">
+          <BookingDetails />
+        </Route>
+        <Route path="/success">
+          <BookingSuccess/>
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div>
+  </Router>
+  </UserContext.Provider>
   );
 }
 
