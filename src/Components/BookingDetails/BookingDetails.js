@@ -36,55 +36,65 @@ const BookingDetails = () => {
         <Container>
             <Row>
                 <Col xs ={12} md={6}>
-                <div><h5>Booking Summary</h5></div>
-                <div className="mainContainer">
+                <div className="mt-3"><h4>Booking Summary</h4></div>
+                <div className="mainContainer mt-3">
                     <div className="leftBox">
-                        <h6>Traveler Name</h6>
-                        <h6>{flowData.name}</h6>
-                        <br/>
-                        <h6 className="">Phone Number</h6>
-                        <h6>{flowData.number}</h6>
-                        <br/>
-                        <h6>Tour Name</h6>
-                        <h6>{flowData.title}</h6>
+                        <div>
+                        <p style={{fontWeight: '400'}}>Traveler Name</p>
+                        <p style={{fontWeight: '400'}}>{flowData.name}</p>
+                        </div>
+
+                        <div className="mt-4">
+                        <p style={{fontWeight: '400'}} className="mt-3">Email</p>
+                        <p style={{fontWeight: '400'}}>{flowData.email}</p>
+                        </div>
+                       
+                        <div className="mt-4">
+                        <p style={{fontWeight: '400'}} className="mt-3">Tour Name</p>
+                        <p style={{fontWeight: '400'}}>{flowData.title}</p>
+                        </div>
+                       
                     </div>
                     <div className="rightBox">
-                        <h6>Email</h6>
-                        <h6>{flowData.email}</h6>
-                        <br/>
-                        <h6>date</h6>
-                        <h6>{flowData.date}</h6>
-                        <br/>
-                        <h6>Variant</h6>
-                        <h6>{flowData.variant}</h6>
+                        <div>
+                        <p style={{fontWeight: '400'}}>Phone Number</p>
+                        <p style={{fontWeight: '400'}}>{flowData.number}</p>
+                        </div>
+                       
+                        <div className="mt-4">
+                        <p style={{fontWeight: '400'}} className="mt-3">Variant</p>
+                        <p style={{fontWeight: '400'}}>{flowData.variant}</p>
+                        </div>
+                       
+                       <div className="mt-4">
+                       <p style={{fontWeight: '400'}} className="mt-3">Date</p>
+                        <p style={{fontWeight: '400'}}>{flowData.date}</p>
+                       </div>
+                        
                     </div>
                 </div>
-
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={12} md={6}>
+                <div style={{borderBottom: '1px solid black', marginTop: '20px', marginBottom: '20px'}}></div>
                 <div><h5>Price</h5></div>
-                    <div className="priceFirst">
+                    <div className="priceFirst mt-3">
                         <div>
-                            <h6>Adult</h6>
+                            <p style={{fontWeight: '400'}}>Adult</p>
                         </div>
                         <div>
-                            <h6>${flowData.price} * {flowData.person}</h6>
+                            <p style={{fontWeight: '400'}}>${flowData.price} * {flowData.person}</p>
                         </div>
                         <div>
-                            <h6>${total}</h6>
+                            <p style={{fontWeight: '400'}}>${total}</p>
                         </div>
                     </div>
                     <div className="priceSec">
-                        <div>
-                            <h6>Convenience <br/> fee & Taxes</h6>
+                        <div className="mt-3">
+                            <p style={{fontWeight: '400'}}>Convenience <br/> fee & Taxes</p>
                         </div>
                         <div className="convenience">
-                            <h6>${convenience} * {flowData.person}</h6>
+                            <p style={{fontWeight: '400'}}>${convenience} * {flowData.person}</p>
                         </div>
                         <div>
-                            <h6>${totalConvenience}</h6>
+                            <p style={{fontWeight: '400'}}>${totalConvenience}</p>
                         </div>
                     </div>
                     <div className="priceFirst">
@@ -92,22 +102,22 @@ const BookingDetails = () => {
                             
                         </div>
                         <div className="total">
-                            <h6>total</h6>
+                            <p style={{fontWeight: '400'}}>total</p>
                         </div>
                         <div>
-                            <h6>${totalCost}</h6>
+                            <p style={{fontWeight: '400'}}>${totalCost}</p>
                         </div>
                     </div>
                     <div>
                         <div className="d-flex">
-                            <div className="mr-4">
+                            <div className="mr-4 mt-1">
                             <input type="checkbox" id="agree" onChange={checkboxHandler} />
                             </div>
                             <div>
-                            <label htmlFor="agree">lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, consectetur adipiscing lorem </label>
+                            <label htmlFor="agree"> <p style={{fontWeight: '400'}}> lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit dolor sit amet  elit dolor </p></label>
                             </div>
                         </div>
-                        <div className="text-center">
+                        <div className="text-center mb-4">
                             <button disabled={!agree} onClick={btnHandler}>Process to Payment</button>
                         </div>
                     </div>

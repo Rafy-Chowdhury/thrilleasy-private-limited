@@ -7,6 +7,8 @@ import {
 import Home from './Components/Home/Home';
 import BookingDetails from './Components/BookingDetails/BookingDetails';
 import BookingSuccess from "./Components/BookingSuccess/BookingSuccess";
+import FormValidation from "./Components/FormValidation/FormValidation";
+import ScrollToTop from './Components/ScrollToTop';
 
 export const UserContext = createContext();
 
@@ -16,10 +18,14 @@ function App() {
   return (
     <UserContext.Provider value = {[flowData, setFlowData]}>
     <Router>
+    <ScrollToTop />
     <div>
       <Switch>
       <Route path="/booking">
           <BookingDetails />
+        </Route>
+        <Route path="/form/:title">
+          <FormValidation/>
         </Route>
         <Route path="/success">
           <BookingSuccess/>

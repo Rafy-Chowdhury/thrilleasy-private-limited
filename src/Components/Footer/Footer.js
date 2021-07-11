@@ -5,10 +5,11 @@ import tw from '../../image/tw.png';
 import ins from '../../image/instra.jpg';
 import pri from '../../image/pri.png';
 import yt from '../../image/yt.jpg';
+import './Footer.css';
 
 const Footer = () => {
     return (
-    <div style={{backgroundColor: 'black', marginTop: '50px'}}>
+    <div style={{backgroundColor: 'black', marginTop: '50px', overflow: 'hidden'}}>
         <Container className="p-4">
             <Row style={{color: 'white'}}>
                 <Col className="mb-3" xs ={12} md={3}>
@@ -54,7 +55,8 @@ const Footer = () => {
             </Row>
             <Row className="mt-5" style={{color: 'white'}}>
                 <Col xs ={12} md={12}>
-                    <p>&copy; 2021 Thrilleasy.com All right reserved.</p>
+                    <div className="lastDiv"><p>&copy; 2021 Thrilleasy.com All right reserved.</p></div>
+                    
                 </Col>
             </Row>
         </Container>

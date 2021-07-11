@@ -1,0 +1,41 @@
+.firstDiv{
+    display: flex;
+}
+.sideIcon{
+    font-size: 25px;
+}
+.firstLine{
+    color: #fff;
+}
+.sideIcon{
+    color: #fff;
+}
+.pText{
+    color: #fff;
+}
+
+
+
+@media all and (min-width: 991px ){
+    .secondDiv{
+        margin-right: auto;
+    }
+    .firstLine{
+        font-size: 30px;
+    }
+    .sideIcon{
+        font-size: 35px;
+    }
+    .pText{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 991px ){
+    .secondDiv{
+        margin-right: auto;
+    }
+    .firstLine{
+        font-size: 19px;
+    }
+   
+}

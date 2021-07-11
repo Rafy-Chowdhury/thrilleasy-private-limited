@@ -1,0 +1,17 @@
+.package-box{
+    border: 2px solid black;
+    border-radius: 90px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+.rounder{
+    width: 25px;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rounder:hover{
+    border: 2px solid orange;
+    
+}

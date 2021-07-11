@@ -3,6 +3,10 @@
 }
 .leftBox{
     margin-right: auto;
+    line-height: 13px;
+}
+.rightBox{
+    line-height: 13px;
 }
 .priceFirst{
     display: flex;
@@ -20,4 +24,19 @@
 .total{
     position: relative;
     margin-left: 40px;
+}
+input[type=checkbox] {
+    transform: scale(1.6);
+}
+button {
+    border: 1px solid black;
+    background-color: black;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
