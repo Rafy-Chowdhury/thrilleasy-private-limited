@@ -1,12 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import moon from '../../image/moon.png';
 import sun from '../../image/sun.png';
+import BoolingForm from "../BookingForm/BoolingForm";
 import { useHistory } from "react-router-dom";
 import './PackageBox.css';
 
 
 const PackageBox = ({data}) => {
+
+    // console.log(data);
     const {title, price} = data;
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    function openModal() {
+      setIsOpen(true);
+    }
+  
+  
+    function closeModal() {
+      setIsOpen(false);
+    }
     const history = useHistory();
     
     const handleButton = (title) => {
@@ -19,9 +32,14 @@ const PackageBox = ({data}) => {
         <div style={{ display: 'flex', alignItems: 'center',padding: '10px'}}>
 
             <div className=" text-center">
-                <div className="rounder" onClick={() => handleButton(title)} >
+                <div onClick={openModal} className="rounder" >
                 </div>
             </div>
+            <div className=" text-center">
+                <div onClick={() => handleButton(title)} className="rounderMobile" >
+                </div>
+            </div>
+            
           
             <div className="mr-auto">
                 <h6>{title}</h6>
@@ -33,6 +51,7 @@ const PackageBox = ({data}) => {
                 <h5>INR {price} <br/> per Adult</h5>
             </div>
         </div>
+        <BoolingForm modalIsOpen={modalIsOpen} closeModal={closeModal} title={title} price={price}></BoolingForm>
         </div>
     );
 };

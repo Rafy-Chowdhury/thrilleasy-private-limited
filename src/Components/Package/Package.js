@@ -4,6 +4,7 @@ import angle from '../../image/triangle.png';
 import PackageBox from '../PackageBox/PackageBox';
 import './Package.css';
 
+
 const Package = () => {
 
     const mainData= [
@@ -28,14 +29,15 @@ const Package = () => {
                         <div><h4 style={{fontWeight: 'bold'}}>Select Package Option</h4></div>
             </div>
             <Row>
-                <Col className="" xs={12} md={8}>
+                <Col className="" xs={12} md={7}>
                     
             <div style={{width: 'auto', height: 'auto', border: '1px solid gray',borderRadius: '20px',padding: '10px', marginTop: '25px'}}>
                 {
-                    mainData.map(data => <PackageBox data={data} key={data.title}></PackageBox> )
+                    mainData.map(data => <PackageBox data={data} key={data.title} ></PackageBox> )
                 }
             </div>
             </Col>
+          
             </Row>
         </Container>
     );

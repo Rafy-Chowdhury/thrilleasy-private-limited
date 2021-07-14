@@ -5,6 +5,10 @@ import { UserContext } from './../../App';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import Headers from '../Headers/Headers';
+import Footer from '../Footer/Footer';
+import angle from '../../image/triangle.png';
+import sidearro from '../../image/sidearro.png';
 
 const BookingDetails = () => {
     const [ flowData ] = useContext(UserContext);
@@ -33,9 +37,13 @@ const BookingDetails = () => {
 
 
     return (
+        <div>
+            <div className="hiding"> <Headers  /> </div>
+            
         <Container>
             <Row>
                 <Col xs ={12} md={6}>
+                <div style={{}}>  
                 <div className="mt-3"><h4>Booking Summary</h4></div>
                 <div className="mainContainer mt-3">
                     <div className="leftBox">
@@ -117,13 +125,70 @@ const BookingDetails = () => {
                             <label htmlFor="agree"> <p style={{fontWeight: '400'}}> lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit dolor sit amet  elit dolor </p></label>
                             </div>
                         </div>
-                        <div className="text-center mb-4">
+                        <div className="text-center">
                             <button disabled={!agree} onClick={btnHandler}>Process to Payment</button>
                         </div>
                     </div>
+                    </div>  
+                </Col>
+                <Col md={6}>
+                <div className="hiding">  
+                <div className="d-flex mt-4">
+                        <div className="mr-2">
+                            <img style={{width: '40px'}} src={angle} alt="angle" />
+                        </div>
+                        <div>
+                            <h5 style={{fontWeight: 'bold'}}> {flowData.title} tour Highlight </h5>
+                        </div>
+                    </div>
+                    <div className="d-flex mt-2">
+                        <div className="mr-3">
+                            <img style={{width: '30px'}} src={sidearro} alt="arrow" />
+                        </div>
+                        <div>
+                            <h5 style={{fontWeight: '200'}}>lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit dolor sit amet  elit dolor </h5>
+                        </div>
+                    </div>
+                    <div className="d-flex mt-1">
+                        <div className="mr-3">
+                            <img style={{width: '30px'}} src={sidearro} alt="arrow" />
+                        </div>
+                        <div>
+                            <h5 style={{fontWeight: '200'}}>lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit dolor sit amet  elit dolor </h5>
+                        </div>
+                    </div>
+                    <div className="d-flex mt-1">
+                        <div className="mr-3">
+                            <img style={{width: '30px'}} src={sidearro} alt="arrow" />
+                        </div>
+                        <div>
+                            <h5 style={{fontWeight: '200'}}>lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit dolor sit amet  elit dolor </h5>
+                        </div>
+                    </div>
+                    <div className="d-flex mt-1">
+                        <div className="mr-3">
+                            <img style={{width: '30px'}} src={sidearro} alt="arrow" />
+                        </div>
+                        <div>
+                            <h5 style={{fontWeight: '200'}}>lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit dolor sit amet  elit dolor </h5>
+                        </div>
+                    </div>
+                    <div className="d-flex mt-1">
+                        <div className="mr-3">
+                            <img style={{width: '30px'}} src={sidearro} alt="arrow" />
+                        </div>
+                        <div>
+                            <h5 style={{fontWeight: '200'}}>lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit dolor sit amet  elit dolor </h5>
+                        </div>
+                    </div>
+                    </div>  
                 </Col>
             </Row>
         </Container>
+        <div className="hiding">
+        <Footer/>
+        </div>
+        </div>
     );
 };
 

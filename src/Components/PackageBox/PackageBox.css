@@ -15,3 +15,21 @@
     border: 2px solid orange;
     
 }
+
+.rounderMobile{
+    width: 25px;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+
+@media all and (min-width:600px){
+    .rounderMobile{
+        display: none;
+    }
+}
+@media all and (max-width:599px){
+    .rounder{
+        display: none;
+    }
+}
