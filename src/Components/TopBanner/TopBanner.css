@@ -38,17 +38,24 @@
     .location{
         width:95px;
     }
-    .button{
-        display: inline-block;
-        font-size: 27px;
-        font-weight: 500;
-        padding: 5px;
-        cursor: pointer;
+    .batonHiding{
+        display: flex;
         width: 96%;
+        background-color: #fcc52d;
+    }
+    /* .button{
+        display: inline-block;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 48%;
         border: 1px solid #fcc52d;
         background-color: #fcc52d;
+        background-color: blue;
         color: black;
-    }
+    } */
     .button:hover{
         text-decoration: none;
         color: black;
@@ -89,7 +96,12 @@
     .location{
         width:95px;
     }
-    .button{
+    .batonHiding{
+        display: flex;
+        width: 96%;
+        background-color: #fcc52d;
+    }
+    /* .button{
         display: inline-block;
         font-size: 27px;
         font-weight: 500;
@@ -99,7 +111,7 @@
         border: 1px solid #fcc52d;
         background-color: #fcc52d;
         color: black;
-    }
+    } */
     .button:hover{
         text-decoration: none;
         color: black;
@@ -143,7 +155,12 @@
     .location{
         width:95px;
     }
-    .button{
+    .batonHiding{
+        display: flex;
+        width: 96%;
+        background-color: #fcc52d;
+    }
+    /* .button{
         display: inline-block;
         font-size: 27px;
         font-weight: 500;
@@ -153,7 +170,7 @@
         border: 1px solid #fcc52d;
         background-color: #fcc52d;
         color: black;
-    }
+    } */
     .button:hover{
         text-decoration: none;
         color: black;
@@ -336,7 +353,7 @@
     .text{
         margin-left: 15px;
     }
-    .hidden-part, .button{
+    .hidden-part, .batonHiding{
         display: none;
     }
     .star{
@@ -368,12 +385,12 @@
  @media all and (max-width:690px){
     .left-img{
         width: 100%;
-        height: auto;
+        height: 230px;;
     }
     .text{
         margin-left: 15px;
     }
-    .hidden-part, .button{
+    .hidden-part, .batonHiding{
         display: none;
     }
     .star{
@@ -408,12 +425,12 @@
 @media all and (max-width:500px){
     .left-img{
         width: 100%;
-        height: auto;
+        height: 230px;
     }
     .text{
         margin-left: 15px;
     }
-    .hidden-part, .button{
+    .hidden-part, .batonHiding{
         display: none;
     }
     .star{

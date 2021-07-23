@@ -1,6 +1,6 @@
 import React from 'react';
 import './TopBanner.css';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Carousel } from 'react-bootstrap';
 import boat from '../../image/boat.jpg';
 import star from '../../image/star.png';
 import time from '../../image/time.png';
@@ -9,16 +9,36 @@ import car from '../../image/car.png';
 import meals from '../../image/meals.png';
 import cash from '../../image/cash.png';
 import guide from '../../image/guide.png';
-import {Link} from 'react-scroll';
+import p1 from '../../image/p1.jpg';
+import p2 from '../../image/p2.jpg';
+import { Link } from 'react-scroll';
+import { useHistory } from 'react-router-dom';
 
 const TopBanner = () => {
+    const history = useHistory();
+    const handleEnq = () => {
+        history.push('/enquiry');
+    }
     return (
         <div className='all-div'>
            <Row>
                <Col xs ={12} md={8}>
                     <div className="d-flex">
                         <div className="left-img">
-                        <img className="left-img" src={boat} alt={boat} />
+                        <Carousel fade>
+                        <Carousel.Item>
+                            <img className="left-img" src={boat}alt="First slide"/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="left-img" src={p1}
+                            alt="Second slide"/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="left-img" src={p2}
+                            alt="Third slide"/>
+                        </Carousel.Item>
+                        </Carousel>   
+
                         </div>
                         <div className="hidden-part">
                         <img className="small-image" style={{width: '150px', marginLeft: ''}} src={boat} alt={boat} />
@@ -49,9 +69,18 @@ const TopBanner = () => {
                    <h1>INR 13800</h1>
                    <h2>Per Adult</h2>
                </div>
-               <div className="text-center mt-3">
-                   <Link className="button" to="package" smooth={true} duration={1000}> BOOK NOW</Link>
+
+
+               <div className="text-center mt-3 batonHiding">
+                  <div style={{width: '48%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                       <button onClick={handleEnq} style={{width: '100%', backgroundColor: 'crimson', border: '1px solid crimson', fontSize: '20px', fontWeight: 'bold'}}>Send Enquiry</button>
+                   </div>
+                   <div style={{width: '48%',display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                       <Link className="button" to="package" smooth={true} duration={1000}><button style={{width: '100%', backgroundColor: '#fcc52d', border: '2px solid #fcc52d', fontSize: '20px', fontWeight: 'bold'}}>BOOK NOW</button></Link>
+                   </div>
                </div>
+
+
                <div className="all-icon">
                <div className="icon-part">
                    <div> <img style={{width: '70px'}} src={car} alt="car" /></div>

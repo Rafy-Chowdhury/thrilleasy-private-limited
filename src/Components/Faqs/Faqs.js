@@ -5,24 +5,23 @@ import './Fqas.css';
 const Faqs = () => {
     return (
         <Container className="mt-4">
-            <h5 style={{fontWeight: 'bold', marginBottom: '30px'}}>Nag Tibba Trek FAQs</h5>
-            <Row>
-                <Col xs={12} md={3}>    
-                <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span> <br/> <br/>
-                <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span> <br/> <br/>
-                </Col>
-                <Col xs={12} md={3}>
-                <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span> <br/> <br/>
-                <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span> <br/> <br/>
-                </Col>
-                <Col xs={12} md={3}>
-                <span className="all-Question" >Lorem ipsum dolor sit amit  dolor</span> <br/> <br/>
-                <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span> <br/> <br/>
-                </Col>
-                <Col xs={12} md={3}>
-                <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span> <br/> <br/>
-                <span className="all-Question" >Lorem ipsum dolor sit amit dolor</span>
-                </Col>
+            <h5 style={{fontWeight: 'bold', marginBottom: '10px'}}>Explore Similar things to Do</h5>
+            <Row className="justify-content-start pl-3">
+               
+               
+                <span className="similar" >Lorem ipsum dolor sit </span> 
+                <span className="similar" >Lorem </span>
+                <span className="similar" >Lorem ipsum dolor  </span>
+                <span className="similar" >Lorem ipsum dolor sit amet </span>
+                <span className="similar" >Lorem ipsum dolor sit </span>
+                <span className="similar" >Lorem ipsum dolor sit </span>
+                <span className="similar" >Lorem ipsum dolor sit amit</span>
+                <span className="similar" >Lorem ipsum dolor sit </span>
+                <span className="similar" >Lorem ipsum dolor sit </span> 
+                <span className="similar" >Lorem </span>
+                <span className="similar" >Lorem ipsum dolor sit </span>
+                <span className="similar" >Lorem ipsum dol </span>
+              
             </Row>
         </Container>
     );

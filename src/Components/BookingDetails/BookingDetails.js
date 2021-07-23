@@ -43,39 +43,39 @@ const BookingDetails = () => {
         <Container>
             <Row>
                 <Col xs ={12} md={6}>
-                <div style={{}}>  
-                <div className="mt-3"><h4>Booking Summary</h4></div>
+                <div>  
+                <div className="mt-3"><h5>Booking Summary</h5></div>
                 <div className="mainContainer mt-3">
                     <div className="leftBox">
                         <div>
-                        <p style={{fontWeight: '400'}}>Traveler Name</p>
+                        <p style={{fontWeight: 'bold'}}>Traveler Name</p>
                         <p style={{fontWeight: '400'}}>{flowData.name}</p>
                         </div>
 
                         <div className="mt-4">
-                        <p style={{fontWeight: '400'}} className="mt-3">Email</p>
+                        <p style={{fontWeight: 'bold'}} className="mt-3">Email</p>
                         <p style={{fontWeight: '400'}}>{flowData.email}</p>
                         </div>
                        
                         <div className="mt-4">
-                        <p style={{fontWeight: '400'}} className="mt-3">Tour Name</p>
+                        <p style={{fontWeight: 'bold'}} className="mt-3">Tour Name</p>
                         <p style={{fontWeight: '400'}}>{flowData.title}</p>
                         </div>
                        
                     </div>
                     <div className="rightBox">
                         <div>
-                        <p style={{fontWeight: '400'}}>Phone Number</p>
+                        <p style={{fontWeight: 'bold'}}>Phone Number</p>
                         <p style={{fontWeight: '400'}}>{flowData.number}</p>
                         </div>
                        
                         <div className="mt-4">
-                        <p style={{fontWeight: '400'}} className="mt-3">Variant</p>
+                        <p style={{fontWeight: 'bold'}} className="mt-3">Variant</p>
                         <p style={{fontWeight: '400'}}>{flowData.variant}</p>
                         </div>
                        
                        <div className="mt-4">
-                       <p style={{fontWeight: '400'}} className="mt-3">Date</p>
+                       <p style={{fontWeight: 'bold'}} className="mt-3">Date</p>
                         <p style={{fontWeight: '400'}}>{flowData.date}</p>
                        </div>
                         
@@ -85,7 +85,7 @@ const BookingDetails = () => {
                 <div><h5>Price</h5></div>
                     <div className="priceFirst mt-3">
                         <div>
-                            <p style={{fontWeight: '400'}}>Adult</p>
+                            <p style={{fontWeight: 'bold'}}>Adult</p>
                         </div>
                         <div>
                             <p style={{fontWeight: '400'}}>${flowData.price} * {flowData.person}</p>
@@ -96,7 +96,7 @@ const BookingDetails = () => {
                     </div>
                     <div className="priceSec">
                         <div className="mt-3">
-                            <p style={{fontWeight: '400'}}>Convenience <br/> fee & Taxes</p>
+                            <p style={{fontWeight: 'bold'}}>Convenience <br/> fee & Taxes</p>
                         </div>
                         <div className="convenience">
                             <p style={{fontWeight: '400'}}>${convenience} * {flowData.person}</p>

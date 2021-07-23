@@ -1,13 +1,14 @@
 .fullDiv{
     display: flex;
     position: fixed;
-    top: 90%;
+    top: 92%;
     width: 100%;
     background-color: #fff;
     z-index: 2;
+    backface-visibility: hidden;
+   
 }
 .leftDiv{
-    padding: 7px;
     width: 50%;
 }
 .rightDiv{
@@ -19,6 +20,7 @@
 }
 .connecting{
     font-size: 20px;
+    font-weight: bold;
     color: #fff;
 }
 .connecting:hover{

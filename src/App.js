@@ -9,6 +9,7 @@ import BookingDetails from './Components/BookingDetails/BookingDetails';
 import BookingSuccess from "./Components/BookingSuccess/BookingSuccess";
 import FormValidation from "./Components/FormValidation/FormValidation";
 import ScrollToTop from './Components/ScrollToTop';
+import Enquiry from "./Components/Enquiry/Enquiry";
 
 export const UserContext = createContext();
 
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/success">
           <BookingSuccess/>
+        </Route>
+        <Route path="/enquiry">
+          <Enquiry/>
         </Route>
         <Route path="/">
           <Home />

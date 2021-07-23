@@ -16,14 +16,14 @@
     
 }
 
-.rounderMobile{
+/* .rounderMobile{
     width: 25px;
     height: 25px;
     border: 2px solid gray;
     border-radius: 50%;
-}
+} */
 
-@media all and (min-width:600px){
+/* @media all and (min-width:600px){
     .rounderMobile{
         display: none;
     }
@@ -32,4 +32,4 @@
     .rounder{
         display: none;
     }
-}
+} */

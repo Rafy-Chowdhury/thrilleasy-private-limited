@@ -1,25 +1,26 @@
-import React, {useState} from "react";
+import React from "react";
 import moon from '../../image/moon.png';
 import sun from '../../image/sun.png';
-import BoolingForm from "../BookingForm/BoolingForm";
+// import BoolingForm from "../BookingForm/BoolingForm";
 import { useHistory } from "react-router-dom";
 import './PackageBox.css';
+
 
 
 const PackageBox = ({data}) => {
 
     // console.log(data);
     const {title, price} = data;
-    const [modalIsOpen, setIsOpen] = useState(false);
+    // const [modalIsOpen, setIsOpen] = useState(false);
 
-    function openModal() {
-      setIsOpen(true);
-    }
+    // function openModal() {
+    //   setIsOpen(true);
+    // }
   
   
-    function closeModal() {
-      setIsOpen(false);
-    }
+    // function closeModal() {
+    //   setIsOpen(false);
+    // }
     const history = useHistory();
     
     const handleButton = (title) => {
@@ -28,17 +29,19 @@ const PackageBox = ({data}) => {
 
     
     return (
-        <div className="package-box">
+
+       
+             <div className="package-box">
         <div style={{ display: 'flex', alignItems: 'center',padding: '10px'}}>
 
             <div className=" text-center">
-                <div onClick={openModal} className="rounder" >
+                <div onClick={() => handleButton(title)} className="rounder" >
                 </div>
             </div>
-            <div className=" text-center">
+            {/* <div className=" text-center">
                 <div onClick={() => handleButton(title)} className="rounderMobile" >
                 </div>
-            </div>
+            </div> */}
             
           
             <div className="mr-auto">
@@ -51,8 +54,12 @@ const PackageBox = ({data}) => {
                 <h5>INR {price} <br/> per Adult</h5>
             </div>
         </div>
-        <BoolingForm modalIsOpen={modalIsOpen} closeModal={closeModal} title={title} price={price}></BoolingForm>
+        {/* <BoolingForm modalIsOpen={modalIsOpen} closeModal={closeModal} title={title} price={price}></BoolingForm> */}
         </div>
+
+           
+      
+       
     );
 };
 

@@ -95,9 +95,9 @@ const FormValidation = () => {
                     </div>
 
                     <form className="mt-2" onSubmit={handleSubmit(onSubmit)}>
-                        <div style={{display: 'flex', alignItems: 'center'}} >
-                            <div className="mr-2 mt-1">
-                            <FontAwesomeIcon style={{fontSize: '30px', marginRight: '5px'}} icon={faCompactDisc} />
+                        <div style={{display: 'flex'}} >
+                            <div className="ml-2 mr-2 mt-1">
+                            <FontAwesomeIcon style={{fontSize: '22px', marginRight: '5px'}} icon={faCompactDisc} />
                             </div>
                             <div>
                             <div className="mb-1">
@@ -112,9 +112,9 @@ const FormValidation = () => {
                             {errors.variant && <span>This field is required</span>}
                             </div>
                         </div>
-                        <div style={{display: 'flex', alignItems: 'center', marginTop: '10px'}}>
-                            <div className="mr-2 mt-1">
-                            <FontAwesomeIcon style={{fontSize: '30px', marginRight: '8px'}} icon={faCalendarAlt} />
+                        <div style={{display: 'flex', marginTop: '10px'}}>
+                            <div className="ml-2 mr-2 mt-1">
+                            <FontAwesomeIcon style={{fontSize: '22px', marginRight: '8px'}} icon={faCalendarAlt} />
                             </div>
                             <div>
                             <div className="mb-1">
@@ -123,9 +123,9 @@ const FormValidation = () => {
                                 <DatePicker className="form-control" selected={startDate} onChange={(date) => setStartDate(date)} />
                             </div>
                         </div>
-                        <div style={{display: 'flex', alignItems: 'center', marginTop: '10px'}}>
-                            <div className="mr-2">
-                            <FontAwesomeIcon style={{fontSize: '30px', marginRight: '8px'}} icon={faUserCircle} />
+                        <div style={{display: 'flex',  marginTop: '10px'}}>
+                            <div className="ml-2 mr-1">
+                            <FontAwesomeIcon style={{fontSize: '22px', marginRight: '8px'}} icon={faUserCircle} />
                             </div>
                             <div>
                             <div className="mb-1">
@@ -135,9 +135,9 @@ const FormValidation = () => {
                             {errors.name && <span style={{color: 'red'}}>This field is required</span>}
                             </div>
                         </div>
-                        <div style={{display: 'flex', alignItems: 'center', marginTop: '10px', marginLeft: '3px'}}>
-                            <div className="mr-2">
-                            <FontAwesomeIcon style={{fontSize: '30px', marginRight: '8px'}} icon={faPhoneSquareAlt} />
+                        <div style={{display: 'flex', marginTop: '10px', marginLeft: '3px'}}>
+                            <div className="ml-2 mr-1">
+                            <FontAwesomeIcon style={{fontSize: '22px', marginRight: '8px'}} icon={faPhoneSquareAlt} />
                             </div>
                             <div>
                             <div className="mb-1">
@@ -147,9 +147,9 @@ const FormValidation = () => {
                             {errors.number && <span style={{color: 'red'}}>This field is required</span>}
                             </div>
                         </div>
-                        <div style={{display: 'flex', alignItems: 'center', marginTop: '10px', marginLeft: '3px'}}>
-                            <div className="mr-2">
-                            <FontAwesomeIcon style={{fontSize: '30px', marginRight: '8px'}} icon={faAt} />
+                        <div style={{display: 'flex', marginTop: '10px', marginLeft: '3px'}}>
+                            <div className="ml-2 mr-1">
+                            <FontAwesomeIcon style={{fontSize: '22px', marginRight: '8px'}} icon={faAt} />
                             </div>
                             <div>
                             <div className="mb-1">
@@ -159,9 +159,9 @@ const FormValidation = () => {
                             {errors.email && <span style={{color: 'red'}}>This field is required</span>}
                             </div>
                         </div>
-                        <div style={{display: 'flex', alignItems: 'center', marginTop: '10px', marginLeft: '3px'}}>
-                            <div className="mr-2">
-                            <FontAwesomeIcon style={{fontSize: '30px', marginRight: '8px'}} icon={faUserAlt} />
+                        <div style={{display: 'flex', marginTop: '10px', marginLeft: '3px'}}>
+                            <div className="ml-2 mr-1">
+                            <FontAwesomeIcon style={{fontSize: '22px', marginRight: '8px'}} icon={faUserAlt} />
                             </div>
                             <div>
                             <div className="mb-1">
@@ -169,13 +169,13 @@ const FormValidation = () => {
                             </div>
                                  <div className="d-flex">
                                     <div>
-                                    <FontAwesomeIcon onClick={handleMinus} style={{fontSize: '30px', marginRight: '8px', cursor: 'pointer'}} icon={faMinusSquare} />
+                                    <FontAwesomeIcon onClick={handleMinus} style={{fontSize: '22px', marginRight: '8px',marginTop: '6px', cursor: 'pointer'}} icon={faMinusSquare} />
                                     </div>
                                     <div className="mb-1 mr-2">
                                 <span style={{fontSize: '20px',fontWeight: '400'}}>{count}</span>
                             </div>
                                     <div>
-                                    <FontAwesomeIcon onClick={handlePlus} style={{fontSize: '30px', marginRight: '8px', cursor: 'pointer'}} icon={faPlusSquare} />
+                                    <FontAwesomeIcon onClick={handlePlus} style={{fontSize: '22px', marginRight: '8px',marginTop: '6px', cursor: 'pointer'}} icon={faPlusSquare} />
                                     </div>
                                 </div>  
                             </div>

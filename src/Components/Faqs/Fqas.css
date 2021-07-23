@@ -1,9 +1,10 @@
-.all-Question {
-    display: inline-block;
-    width: 100%;
-    border: 2px solid black;
-    padding: 5px;
-    font-size: 20px;
+.similar{
+    border: 1px solid black;
+    padding: 5px 10px;
     border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
